@@ -1,0 +1,64 @@
+
+/* .container{
+ margin: 100px 300px;
+ border: 2px solid black;
+ width: 600px;
+ height: 400px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+
+ 
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.form-group {
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+.quenmatkhau{
+    margin-left:250px;
+    color: rgb(13, 209, 209);
+    
+}
+.btnlogin{
+    margin-top: 60px;
+    margin-left: 10px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+   
+}
+.dacotaikhoan{
+    margin-left:250px;
+    color: rgb(13, 209, 209);
+    
+}
+.btndangky{
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+   
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    background-color: #ff0000;
+}
+
+ */
