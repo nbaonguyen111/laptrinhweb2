@@ -13,44 +13,43 @@ use App\Http\Controllers\CrudUserController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Route::get('dashboard', [CrudUserController::class, 'dashboard']);
+Route::get('dashboard', [CrudUserController::class, 'dashboard']);
 
-// Route::get('login', [CrudUserController::class, 'login'])->name('login');
-// Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');
+Route::get('login', [CrudUserController::class, 'login'])->name('login');
+Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');
 
-// Route::get('create', [CrudUserController::class, 'createUser'])->name('user.createUser');
-// Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
+Route::get('create', [CrudUserController::class, 'createUser'])->name('user.createUser');
+Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
 
-// Route::get('read', [CrudUserController::class, 'readUser'])->name('user.readUser');
+Route::get('read', [CrudUserController::class, 'readUser'])->name('user.readUser');
 
-// Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.deleteUser');
+Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.deleteUser');
 
-// Route::get('update', [CrudUserController::class, 'updateUser'])->name('user.updateUser');
-// Route::post('update', [CrudUserController::class, 'postUpdateUser'])->name('user.postUpdateUser');
+Route::get('update', [CrudUserController::class, 'updateUser'])->name('user.updateUser');
+Route::post('update', [CrudUserController::class, 'postUpdateUser'])->name('user.postUpdateUser');
 
-// Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
+Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 
-// Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
+Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
 
-// Route::get('login', [CrudUserController::class, 'login'])->name('login');
 
 Route::get('/', function () {
     return view('welcome');
 
 });
 
-Route::get('/login', function () {
-    return view('login'); 
-});
-Route::get('/list', function () {
-    return view('list'); 
-});
-Route::get('/register', function () {
-    return view('register'); 
-});
-Route::get('/update', function () {
-    return view('update'); 
-});
-Route::get('/view', function () {
-    return view('view'); 
-});
+// Route::get('/login', function () {
+//     return view('login'); 
+// });
+// Route::get('/list', function () {
+//     return view('list'); 
+// });
+// Route::get('/register', function () {
+//     return view('register'); 
+// });
+// Route::get('/update', function () {
+//     return view('update'); 
+// });
+// Route::get('/view', function () {
+//     return view('view'); 
+// });
