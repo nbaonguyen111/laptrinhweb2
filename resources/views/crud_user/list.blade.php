@@ -11,6 +11,7 @@
                             <th>Name</th>
                             <th>Email</th>
                             <th>Role</th>
+                            <th>Order</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -25,6 +26,11 @@
                                         <a href="{{ route('user.readRole', ['id' => $role->id]) }}">
                                             {{ $role->name . '-' }}
                                         </a>
+                                    @endforeach
+                                </th>
+                                <th>
+                                @foreach($user->orders as $order)
+                                            {{ $order->name . '-' }}
                                     @endforeach
                                 </th>
                                 <th>
