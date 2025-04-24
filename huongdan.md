@@ -28,4 +28,21 @@ php artisan db:seed --class=UserSeeder
 php artisan db:seed --class=RoleSeeder
 php artisan db:seed --class=UserRoleSeeder
 php artisan db:seed --class=OrdersSeeder
-nếu làm biếng có thể dùng php artisan db:all để chạy tất cả
+nếu làm biếng có thể dùng php artisan db:seed để chạy tất cả
+Bước 3: Tạo Model
+php artisan make:model Role
+php artisan make:model User
+php artisan make:model UserRole
+php artisan make:model Order
+php artisan make:controller RoleController
+php artisan make:controller OrderController
+Relationship(N-N)
+public function roles(): BelongsToMany{
+    return $this->belongsToMany(Role::class, 'user_role');
+}
+(1-N)
+    public function users(): HasMany
+    {
+        return $this->hasMany(Order::class);
+    }
+    hết
